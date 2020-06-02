@@ -1,0 +1,62 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:800);
+
+body {
+    display: grid;
+    place-items: center;
+    background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+    background-color: rgb(248, 239, 185);
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+li {
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Lobster", cursive;
+    color: rgb(61, 3, 68);
+}
+.nav__img-main-icon-size {
+    width: 30px;
+    height: 30px;
+}
+.nav__main-menu {
+    display: flex;
+    margin-top: 6px;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav__main-menu li {
+    list-style: none;
+    font-style: normal;
+}
+.nav__main-menu li a {
+    text-decoration: none;
+    color: black;
+    padding: 9px;
+}
+
+  h1{
+    font-size: 28px;
+    font-weight: bold;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  h2{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  .main-content{
+      text-align: center;
+      margin-bottom: 25px;
+      margin-top: 25px;
+      width: 65%;
+      background-color: rgb(255, 237, 102);
+      border: 1px solid silver;
+      max-width: 900px;
+  }

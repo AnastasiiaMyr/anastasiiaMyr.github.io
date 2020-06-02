@@ -1,0 +1,28 @@
+html{
+  overflow: hidden;
+}
+.head__game {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(255, 237, 102);
+}
+
+.game {
+  width: 470px;
+  margin: 20px auto;
+  margin-top: 100px;
+  margin-bottom: 290px;
+}
+.head__game {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(255, 237, 102);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:14px;
+  font-weight:bold;
+}
+body{
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  background-color: rgb(248, 239, 185);
+
+}

@@ -1,0 +1,42 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: rgb(255, 237, 102);
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__img-main-icon-size {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.nav__main-menu {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.nav__main-menu li {
+    list-style: none;
+    font-style: normal;
+}
+
+.nav__main-menu li a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:14px;
+    font-weight:bold;
+    text-decoration: none;
+    color: black;
+    padding: 9px;
+}

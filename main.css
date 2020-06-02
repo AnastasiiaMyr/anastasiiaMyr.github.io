@@ -1,0 +1,352 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:800);
+
+header {
+    margin: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ffed66;
+    align-items: center;
+    height: 7vh;
+    width: 100%;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+li {
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Lobster", cursive;
+    color: rgb(61, 3, 68);
+}
+.nav__img-main-icon-size {
+    width: 30px;
+    height: 30px;
+}
+.nav__main-menu {
+    display: flex;
+    margin-top: 6px;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav__main-menu li {
+    list-style: none;
+    font-style: normal;
+}
+.nav__main-menu li a {
+    text-decoration: none;
+    color: black;
+    padding: 9px;
+}
+
+
+/*CARDS*/
+
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+    background-color: rgb(248, 239, 185);
+  }
+  .page-content {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    max-width: 1024px;
+    margin: 110px;
+    font-family: var(--font-sans);
+    margin-top: 52px;
+  }
+  @media (min-width: 600px) {
+    .page-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 800px) {
+    .page-content {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .card {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+  }
+  @media (min-width: 600px) {
+    .card {
+      height: 500px;
+      width: 250px;
+    }
+  }
+  .card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    -webkit-transition: -webkit-transform calc(var(--d) * 1.5) var(--e);
+    transition: -webkit-transform calc(var(--d) * 1.5) var(--e);
+    transition: transform calc(var(--d) * 1.5) var(--e);
+    transition: transform calc(var(--d) * 1.5) var(--e), -webkit-transform calc(var(--d) * 1.5) var(--e);
+    pointer-events: none;
+  }
+  .card:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(11.7%, rgba(0, 0, 0, 0.009)), color-stop(22.1%, rgba(0, 0, 0, 0.034)), color-stop(31.2%, rgba(0, 0, 0, 0.072)), color-stop(39.4%, rgba(0, 0, 0, 0.123)), color-stop(46.6%, rgba(0, 0, 0, 0.182)), color-stop(53.1%, rgba(0, 0, 0, 0.249)), color-stop(58.9%, rgba(0, 0, 0, 0.32)), color-stop(64.3%, rgba(0, 0, 0, 0.394)), color-stop(69.3%, rgba(0, 0, 0, 0.468)), color-stop(74.1%, rgba(0, 0, 0, 0.54)), color-stop(78.8%, rgba(0, 0, 0, 0.607)), color-stop(83.6%, rgba(0, 0, 0, 0.668)), color-stop(88.7%, rgba(0, 0, 0, 0.721)), color-stop(94.1%, rgba(0, 0, 0, 0.762)), to(rgba(0, 0, 0, 0.79)));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-transition: -webkit-transform calc(var(--d) * 2) var(--e);
+    transition: -webkit-transform calc(var(--d) * 2) var(--e);
+    transition: transform calc(var(--d) * 2) var(--e);
+    transition: transform calc(var(--d) * 2) var(--e), -webkit-transform calc(var(--d) * 2) var(--e);
+  }
+  .card:nth-child(1):before {
+    background-image: url(./img/test11.jpg);
+  }
+  .card:nth-child(2):before {
+    background-image: url(./img/test22.jpg);
+  }
+  .card:nth-child(3):before {
+    background-image: url(./img/test55.jpg);
+  }
+  .card:nth-child(4):before {
+    background-image: url(./img/test4444.jpg);
+  }
+  
+  .content {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 1rem;
+    -webkit-transition: -webkit-transform var(--d) var(--e);
+    transition: -webkit-transform var(--d) var(--e);
+    transition: transform var(--d) var(--e);
+    transition: transform var(--d) var(--e), -webkit-transform var(--d) var(--e);
+    z-index: 1;
+  }
+  .content > * + * {
+    margin-top: 1rem;
+  }
+  
+  .title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .copy {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    font-style: italic;
+    line-height: 1.35;
+  }
+  
+  .design {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    border: none;
+  }
+  .btn:hover {
+    background-color: #0d0d0d;
+  }
+  .btn:focus {
+    outline: 1px dashed yellow;
+    outline-offset: 3px;
+  }
+  
+  @media (hover: hover) and (min-width: 600px) {
+    .card:after {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  
+    .content {
+      -webkit-transform: translateY(calc(100% - 4.5rem));
+              transform: translateY(calc(100% - 4.5rem));
+    }
+    .content > *:not(.title) {
+      opacity: 0;
+      -webkit-transform: translateY(1rem);
+              transform: translateY(1rem);
+      -webkit-transition: opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
+      transition: opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
+      transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+      transition: transform var(--d) var(--e), opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
+    }
+  
+    .card:hover,
+    .card:focus-within {
+      -webkit-box-align: center;
+              align-items: center;
+    }
+    .card:hover:before,
+    .card:focus-within:before {
+      -webkit-transform: translateY(-4%);
+              transform: translateY(-4%);
+    }
+    .card:hover:after,
+    .card:focus-within:after {
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+    }
+    .card:hover .content,
+    .card:focus-within .content {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    .card:hover .content > *:not(.title),
+    .card:focus-within .content > *:not(.title) {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-transition-delay: calc(var(--d) / 8);
+              transition-delay: calc(var(--d) / 8);
+    }
+  
+    .card:focus-within:before, .card:focus-within:after,
+    .card:focus-within .content,
+    .card:focus-within .content > *:not(.title) {
+      -webkit-transition-duration: 0s;
+              transition-duration: 0s;
+    }
+  }
+  
+
+  /* brain animation  */
+  @keyframes rotate{
+    00%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+  }
+  
+  @keyframes rotate2{
+    00%,100%{transform: rotate(0deg);}
+    25%,75%{transform: rotate(-45deg);}
+    50%{transform: rotate(110deg);}
+  }
+  
+  @keyframes rotate3{
+    00%,100%{transform: rotate(0deg);}
+    25%{transform: rotate(50deg);}
+    75%{transform: rotate(-50deg);}
+  }
+  
+  @keyframes colorswitchGreen{
+    00%,20%,100%{stroke: #4fdfad;}
+    10%{stroke: #1f2435;}
+  }
+  
+  @keyframes colorswitchPink{
+    00%,20%,100%{stroke: #e95095;}
+    10%{stroke: #1f2435;}
+  }
+  
+  @keyframes colorswitchYellow{
+    00%,20%,100%{stroke: #ffe680;}
+    10%{stroke: #1f2435;}
+  }
+  
+  @keyframes trans{
+    00%,050%,100%{transform: translate(0,0);}
+    025%,075%{transform: translate(0,-0.3em);}
+  }
+  
+  @supports(transform-origin: 50% 50%){
+    .star{
+      animation: rotate 5s linear infinite;
+      transform-origin:16px 30px;
+    }
+  
+    .triangle{
+      animation: rotate 7s linear infinite;
+      transform-origin:77px 32px;
+    }
+  
+    .asterix{
+      animation: rotate2 10s linear infinite;
+      transform-origin:53px 21px;
+    }
+  
+    .love{
+      animation: rotate3 5s linear infinite;
+      transform-origin:107px 26px;
+    }
+  
+    .brain:hover .star,.brain:hover .triangle{
+      animation: trans 0.6s ease-in-out infinite;
+    }
+    .brain:hover .asterix,.brain:hover .love{
+      animation: trans 0.6s ease-in-out 0.1s infinite;
+    }
+    .brain:hover .NleftTop,.brain:hover .NrightBot1,.brain:hover .NrightBot2{
+      animation: colorswitchGreen 0.6s linear infinite;
+    }
+    .brain:hover .NrightTop{
+      animation: colorswitchPink 0.6s linear infinite;
+      animation-delay: 0.1s;
+    }
+    .brain:hover .NleftBot{
+      animation: colorswitchYellow 0.6s linear infinite;
+      animation-delay: 0.2s;
+    }
+   }
+  
+  .NrightBot1,.NrightBot2,.NleftTop{
+    animation: colorswitchGreen 5s linear infinite;
+  }
+  .NleftTop{
+    animation-delay: 2s;
+  }
+  .NrightTop{
+    animation: colorswitchPink 3s linear infinite;
+    animation-delay: 1s;
+  }
+  .NleftBot{
+    animation: colorswitchYellow 6s linear infinite;
+    animation-delay: 3s;
+  }
+  .brain{
+    margin-top: 20px;
+  }
+
+  
