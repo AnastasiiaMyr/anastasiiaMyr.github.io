@@ -60,7 +60,7 @@ function game_drow(num) {
 function сountdown() {
     let time_set = document.querySelector("#time");
     if (time === 0) {
-        alert("Час вийшов. Ваш результат = " + answer);
+        alert("Час вийшов. Ваш результат = " + score.innerHTML);
         clearInterval(s);
     }
     if (time < 10) {
