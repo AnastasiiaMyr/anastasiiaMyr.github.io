@@ -60,9 +60,19 @@ function game_drow(num) {
 function сountdown() {
     let time_set = document.querySelector("#time");
     if (time === 0) {
-        alert("Час вийшов. Ваш результат = " + score.innerHTML);
-        clearInterval(s);
-    }
+        if(score.innerHTML <1200 && score.innerHTML>800) {
+            alert("Час вийшов. Твій результат = " + score.innerHTML + "  Молодець! В тебе чудовий результат");
+            clearInterval(s);
+        }
+        else if(score.innerHTML <8000 && score.innerHTML>300) {
+            alert("Час вийшов. Твій результат = " + score.innerHTML + "  Чудово! Твій результата середній.Зроби ще щвидше і краще.");
+            clearInterval(s);
+        } 
+        else if(score.innerHTML <300 && score.innerHTML>0) {
+            alert("Час вийшов. Твій результат = " + score.innerHTML+ "  Ти можеш набагато краще. Вперед!");
+            clearInterval(s);
+        }
+     }
     if (time < 10) {
         time_set.innerHTML = "00:0" + time--;
     } else {

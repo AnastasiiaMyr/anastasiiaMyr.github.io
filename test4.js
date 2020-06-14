@@ -165,9 +165,19 @@ function createFish(arr) {
 function сountdown() {
     let time_set = document.querySelector("#time");
     if (time === 0) {
-        alert("Час вийшов. Ваш результат = " + scores.innerHTML);
-        clearInterval(s);
-    }
+        if(scores.innerHTML <1500 && scores.innerHTML>1000) {
+            alert("Час вийшов. Твій результат = " + scores.innerHTML + "  Молодець! В тебе чудовий результат");
+            clearInterval(k);
+        }
+        else if(scores.innerHTML <1000 && scores.innerHTML>500) {
+            alert("Час вийшов. Твій результат = " + scores.innerHTML + "  Чудово! Твій результата середній. Зроби ще щвидше і краще.");
+            clearInterval(k);
+        } 
+        else if(scores.innerHTML <500 && scores.innerHTML>0) {
+            alert("Час вийшов. Твій результат = " + scores.innerHTML+ "  Ти можеш набагато краще. Вперед!");
+            clearInterval(k);
+        }
+     }
     if (time < 10) {
         time_set.innerHTML = "00:0" + time--;
     } else {

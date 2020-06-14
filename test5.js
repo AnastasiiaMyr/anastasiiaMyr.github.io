@@ -185,9 +185,19 @@ c.addEventListener("mouseup", (e) => { // Пользователь отпуст�
 function сountdown() {
     let time_set = document.querySelector("#time");
     if (time === 0) {
-        alert("Час вийшов. Ваш результат = " + score.innerHTML);
-        clearInterval(k);
-    }
+        if(score.innerHTML == 50) {
+            alert("Час вийшов. Твій результат = " + score.innerHTML + "  Молодець! В тебе чудовий результат");
+            clearInterval(k);
+        }
+        else if(score.innerHTML == 25) {
+            alert("Час вийшов. Твій результат = " + score.innerHTML + "  Чудово! Твій результата середній. Зроби ще щвидше і краще.");
+            clearInterval(k);
+        } 
+        else {
+            alert("Час вийшов. Твій результат = " + score.innerHTML+ "  Ти можеш набагато краще. Вперед!");
+            clearInterval(k);
+        }
+     }
     if (time < 10) {
         time_set.innerHTML = "00:0" + time--;
     } else {

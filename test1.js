@@ -36,19 +36,19 @@ function img_delete(event) {
     let object = document.querySelectorAll(".object")
 
     if (numberColor > 6 && event.target.id === "a") {
-        score += 1;
+        score += 20;
         for (let i = 0; i < object.length; i++) {
             object[i].remove();
         }
         img_insert();
     } else if (numberColor < 6 && event.target.id === "c") {
-        score += 1;
+        score += 20;
         for (let i = 0; i < object.length; i++) {
             object[i].remove();
         }
         img_insert();
     } else if (numberColor == 6 && event.target.id === "b") {
-        score += 1;
+        score += 20;
         for (let i = 0; i < object.length; i++) {
             object[i].remove();
         }
@@ -59,9 +59,19 @@ function img_delete(event) {
 function сountdown() {
     let time_set = document.querySelector("#time");
     if (time === 0) {
-        alert("Час вийшов. Ваш результат = " + score);
-        clearInterval(s);
-    }
+        if(score <1200 && score>800) {
+            alert("Час вийшов. Твій результат = " + score + "  Молодець! В тебе чудовий результат");
+            clearInterval(s);
+        }
+        else if(score <8000 && score>300) {
+            alert("Час вийшов. Твій результат = " + score + "  Чудово! Твій результата середній. Зроби ще щвидше і краще.");
+            clearInterval(s);
+        } 
+        else if(score <300 && score>0) {
+            alert("Час вийшов. Твій результат = " + score + "  Ти можеш набагато краще. Вперед!");
+            clearInterval(s);
+        }
+     }
     if (time < 10) {
         time_set.innerHTML = "00:0" + time--;
     } else {
