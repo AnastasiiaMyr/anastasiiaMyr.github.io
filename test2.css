@@ -4,7 +4,7 @@
 }
 
 html, body{
-  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  background-image: url(./img/main.png);
   background-color: rgb(248, 239, 185);
   height: 100%;
   overflow: hidden;
@@ -33,7 +33,7 @@ html, body{
   width: 100%;
   display: flex;
   justify-content: space-around;
-  background-color: rgb(255, 237, 102);
+      background-color: rgb(4, 96, 253);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size:14px;
   font-weight:bold;

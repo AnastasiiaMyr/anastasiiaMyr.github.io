@@ -7,36 +7,37 @@ body {
 }
 
 nav {
-    background-color: rgb(255, 237, 102);
+    background-color: rgb(4, 96, 253);
     width: 100vw;
     height: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Изменено для центрирования содержимого */
+    align-items: normal; /* Добавлено для вертикального центрирования */
 }
 
 .nav__img-main-icon-size {
     width: 30px;
     height: 30px;
-    margin-top: 5px;
 }
 
 .nav__main-menu {
-    margin-top: 10px;
     display: flex;
-    justify-content: space-around;
-    width: 80%;
+    justify-content: center; /* Изменено для центрирования элементов */
+    align-items: center; /* Добавлено для вертикального центрирования */
+    width: auto; /* Изменено для автоматической ширины */
 }
 
 .nav__main-menu li {
     list-style: none;
     font-style: normal;
+    margin: 0 15px; /* Добавлено для равномерного отступа между элементами */
 }
 
 .nav__main-menu li a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:14px;
-    font-weight:bold;
+    font-family: "Bookman Old Style";
+    font-size: 18px;
+    font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 9px;
 }
